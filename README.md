@@ -12,3 +12,8 @@ cd saemtle-svelte-app
 npm install
 ```
 
+```
+npm install -g concurrently
+concurrently "npm run dev --prefix my-svelte-app" "python app.py" 
+```
+

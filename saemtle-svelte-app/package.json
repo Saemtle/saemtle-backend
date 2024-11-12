@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rollup -c",
     "dev": "rollup -c -w",
+    "build": "rollup -c && cp -r public/* ../my-flask-app/static/",
     "start": "sirv public --no-clear"
+    
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.0",
